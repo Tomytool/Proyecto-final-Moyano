@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43.785" height="46.037" viewBox="0 0 43.785 46.037">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 7px;
+      }
+    </style>
+  </defs>
+  <g id="Icono_mobil" transform="translate(-37 -22.5)">
+    <line id="Línea_3" data-name="Línea 3" class="cls-1" x2="36.785" transform="translate(40.5 26)"/>
+    <line id="Línea_4" data-name="Línea 4" class="cls-1" x2="36.785" transform="translate(40.5 39.012)"/>
+    <line id="Línea_5" data-name="Línea 5" class="cls-1" x2="36.785" transform="translate(40.5 52.024)"/>
+    <line id="Línea_6" data-name="Línea 6" class="cls-1" x2="36.785" transform="translate(40.5 65.037)"/>
+  </g>
+</svg>
