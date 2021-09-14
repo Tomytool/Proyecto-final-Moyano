@@ -1,0 +1,23 @@
+{
+  "name": "proyecto_final_moyano",
+  "version": "1.0.0",
+  "description": "Proyecto final de desarrollo web",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomytool/Proyecto-final-Moyano.git"
+  },
+  "author": "Tomas Moyano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomytool/Proyecto-final-Moyano/issues"
+  },
+  "homepage": "https://github.com/Tomytool/Proyecto-final-Moyano#readme"
+}
