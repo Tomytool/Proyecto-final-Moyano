@@ -11209,6 +11209,9 @@ textarea.form-control-lg {
   flex-direction: column;
   margin: 30px 15px;
 }
+.main .main__card .main__cardTexto h2, .main .main__card .main__cardTexto .h2 {
+  font-size: 24px;
+}
 .main .main__card .main__cardTexto a {
   text-decoration: none;
   width: 300px;
@@ -11274,10 +11277,198 @@ textarea.form-control-lg {
   color: white;
   border-bottom: 2px solid white;
 }
+.footer .footer__logo p {
+  font-size: 16px;
+}
 .footer .footer__red {
   width: 60%;
   display: flex;
   justify-content: space-around;
+}
+
+.ejemplos {
+  background-color: #d4dcff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ejemplos .ejemplos__card {
+  width: 80%;
+  display: flex;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion {
+  width: 40%;
+  padding: 50px;
+  margin: 0 auto;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card {
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 10px;
+  border-radius: 10px;
+  background-color: #d7d9ce;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card .card__imagen {
+  width: 100%;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card .card__imagen img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card .card__texto {
+  width: 100%;
+  color: black;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card .card__texto h2, .ejemplos .ejemplos__card .ejemplos__demostracion .card .card__texto .h2 {
+  padding: 10px;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card .card__texto p {
+  padding: 10px;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card .card__texto .boton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card .card__texto .boton a {
+  color: white;
+  width: 120px;
+  padding: 5px;
+  font-size: 24px;
+  background-color: #38726c;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card1 {
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 10px;
+  border-radius: 10px;
+  background-color: #d7d9ce;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card1 .card1__imagen {
+  width: 100%;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card1 .card1__imagen img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card1 .card1__texto {
+  width: 100%;
+  color: black;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card1 .card1__texto h2, .ejemplos .ejemplos__card .ejemplos__demostracion .card1 .card1__texto .h2 {
+  padding: 10px;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card1 .card1__texto p {
+  padding: 10px;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card1 .card1__texto .boton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card1 .card1__texto .boton a {
+  color: white;
+  width: 120px;
+  padding: 5px;
+  font-size: 24px;
+  background-color: #38726c;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card1:hover img {
+  filter: grayscale(90%);
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card2 {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  box-shadow: 4px 4px 10px;
+  border-radius: 10px;
+  background-color: #d7d9ce;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card2 .card2__imagen {
+  position: absolute;
+  width: 250px;
+  height: 198px;
+  left: calc(50% - 250px / 2);
+  bottom: 82px;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card2 .card2__imagen img {
+  width: 100%;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card2 .card2__texto {
+  position: absolute;
+  width: 226px;
+  height: 300px;
+  left: 37px;
+  top: 165px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card2 .card2__texto h2, .ejemplos .ejemplos__card .ejemplos__demostracion .card2 .card2__texto .h2 {
+  font-size: 24px;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card2 .card2__texto .boton,
+.ejemplos .ejemplos__card .ejemplos__demostracion .card2 .card2__texto h2,
+.ejemplos .ejemplos__card .ejemplos__demostracion .card2 .card2__texto .h2,
+.ejemplos .ejemplos__card .ejemplos__demostracion .card2 .card2__texto p {
+  margin-top: 5px;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card2 .card2__texto .boton {
+  align-self: center;
+}
+.ejemplos .ejemplos__card .ejemplos__demostracion .card2 .card2__texto .boton a {
+  color: white;
+  width: 120px;
+  padding: 5px;
+  font-size: 24px;
+  background-color: #38726c;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.ejemplos .ejemplos__card .card2:hover img {
+  transform: translate(0px, -100px);
+  transition: transform 2s;
+}
+.ejemplos .ejemplos__card .card2:hover .card2__texto {
+  opacity: 1;
+  transition: opacity 0.1s;
+  transition-delay: 1s;
+}
+.ejemplos .ejemplos__card .ejemplos__descripcion {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ejemplos .ejemplos__card .ejemplos__descripcion a {
+  text-decoration: none;
+  width: 300px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  background: #13505b;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
