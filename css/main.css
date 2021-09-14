@@ -11471,4 +11471,13 @@ textarea.form-control-lg {
   border-radius: 10px;
 }
 
+.header_contacto {
+  z-index: 1;
+}
+.header_contacto .contacto_formulario {
+  width: 70%;
+  padding: 20px 20px;
+  background-color: #0c74896e;
+}
+
 /*# sourceMappingURL=main.css.map */
