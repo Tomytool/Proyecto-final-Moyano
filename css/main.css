@@ -11119,32 +11119,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.menu {
-  display: flex;
-  justify-content: space-around;
-  background-color: #040f11;
-  padding: 10px;
+.navbar a {
+  font-size: 24px;
 }
-.menu .menu__logo {
-  height: 100%;
-}
-.menu .menu__opciones {
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 200px);
-  grid-template-rows: 1f;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-.menu .menu__opciones .item {
-  list-style: none;
-  margin-left: 10px;
-  text-align: center;
-}
-.menu .menu__opciones .item a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.5em;
+.navbar .nav-item {
+  margin-left: 20px;
 }
 
 .header {
@@ -11267,6 +11246,7 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #040f11;
   padding: 5px 0;
@@ -11293,15 +11273,16 @@ textarea.form-control-lg {
   flex-direction: column;
 }
 .ejemplos .ejemplos__card {
-  width: 80%;
+  width: 100%;
   display: flex;
 }
 .ejemplos .ejemplos__card .ejemplos__demostracion {
-  width: 40%;
+  width: 100%;
   padding: 50px;
   margin: 0 auto;
 }
 .ejemplos .ejemplos__card .ejemplos__demostracion .card {
+  margin: 0 auto;
   width: 300px;
   height: auto;
   display: flex;
@@ -11320,6 +11301,7 @@ textarea.form-control-lg {
 .ejemplos .ejemplos__card .ejemplos__demostracion .card .card__texto {
   width: 100%;
   color: black;
+  margin: 0 auto;
 }
 .ejemplos .ejemplos__card .ejemplos__demostracion .card .card__texto h2, .ejemplos .ejemplos__card .ejemplos__demostracion .card .card__texto .h2 {
   padding: 10px;
@@ -11348,6 +11330,7 @@ textarea.form-control-lg {
   z-index: 2;
 }
 .ejemplos .ejemplos__card .ejemplos__demostracion .card1 {
+  margin: 0 auto;
   width: 300px;
   height: auto;
   display: flex;
@@ -11393,6 +11376,7 @@ textarea.form-control-lg {
   filter: grayscale(90%);
 }
 .ejemplos .ejemplos__card .ejemplos__demostracion .card2 {
+  margin: 0 auto;
   position: relative;
   width: 300px;
   height: 350px;
@@ -11452,6 +11436,7 @@ textarea.form-control-lg {
   transition-delay: 1s;
 }
 .ejemplos .ejemplos__card .ejemplos__descripcion {
+  margin: 0 auto;
   width: 60%;
   display: flex;
   justify-content: center;
@@ -11478,6 +11463,183 @@ textarea.form-control-lg {
   width: 70%;
   padding: 20px 20px;
   background-color: #0c74896e;
+}
+
+.contenidoBootstrap {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d4dcff;
+}
+.contenidoBootstrap .carrusel,
+.contenidoBootstrap .tarjetas1,
+.contenidoBootstrap .tarjetas2,
+.contenidoBootstrap .tarjetas3 {
+  padding: 40px 0;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 60% 30%;
+  grid-template-rows: 1fr;
+}
+.contenidoBootstrap .carrusel .card,
+.contenidoBootstrap .tarjetas1 .card,
+.contenidoBootstrap .tarjetas2 .card,
+.contenidoBootstrap .tarjetas3 .card {
+  width: 300px;
+  margin: 0 auto;
+}
+.contenidoBootstrap .carrusel .contenidoBootstarp__texto,
+.contenidoBootstrap .tarjetas1 .contenidoBootstarp__texto,
+.contenidoBootstrap .tarjetas2 .contenidoBootstarp__texto,
+.contenidoBootstrap .tarjetas3 .contenidoBootstarp__texto {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.contenidoBootstrap .carrusel .contenidoBootstarp__texto a,
+.contenidoBootstrap .tarjetas1 .contenidoBootstarp__texto a,
+.contenidoBootstrap .tarjetas2 .contenidoBootstarp__texto a,
+.contenidoBootstrap .tarjetas3 .contenidoBootstarp__texto a {
+  text-decoration: none;
+  width: 300px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  background: #13505b;
+  border-radius: 10px;
+}
+
+.ejemplosSass {
+  background-color: #d4dcff;
+}
+.ejemplosSass .ejemplo1 {
+  display: grid;
+  grid-template-columns: 65% 25%;
+  grid-template-rows: 400px;
+  padding: 30px;
+}
+.ejemplosSass .ejemplo1 .ejemplosSass__fondo {
+  width: 90%;
+  position: relative;
+}
+.ejemplosSass .ejemplo1 .ejemplosSass__fondo .imagen {
+  border: 1px solid black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/img_fondo_formulario.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.459);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto .texto__titulo {
+  color: white;
+}
+.ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto .texto__buscador {
+  margin-top: 20px;
+  width: 60%;
+  background-color: white;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto .texto__buscador input {
+  width: 90%;
+  border: none;
+  border-radius: 50px 0px 0px 50px;
+}
+.ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto .texto__buscador span {
+  font-size: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.ejemplosSass .ejemplo1 .ejemplosSass__texto {
+  margin: auto 0;
+}
+.ejemplosSass .ejemplo1 .ejemplosSass__texto a {
+  text-decoration: none;
+  width: 300px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  background: #13505b;
+  border-radius: 10px;
+}
+.ejemplosSass .ejemplo2 {
+  display: grid;
+  grid-template-columns: 65% 25%;
+  grid-template-rows: 400px;
+  padding: 30px;
+}
+.ejemplosSass .ejemplo2 .ejemplosSass__boton {
+  width: 90%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ejemplosSass .ejemplo2 .ejemplosSass__boton .boton {
+  background-color: black;
+  width: 250px;
+  height: 60px;
+  text-align: center;
+  position: relative;
+}
+.ejemplosSass .ejemplo2 .ejemplosSass__boton .boton .boton__fondo {
+  width: 252px;
+  height: 62px;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+}
+.ejemplosSass .ejemplo2 .ejemplosSass__boton .boton a {
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+  position: absolute;
+  font-size: 45px;
+  margin: auto 0;
+  text-decoration: none;
+  color: white;
+}
+.ejemplosSass .ejemplo2 .ejemplosSass__boton .boton:hover .boton__fondo {
+  background-color: yellow;
+}
+.ejemplosSass .ejemplo2 .ejemplosSass__texto {
+  margin: auto 0;
+}
+.ejemplosSass .ejemplo2 .ejemplosSass__texto a {
+  text-decoration: none;
+  width: 300px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  background: #13505b;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+.contenidoBootstrap {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $color_fondo;
+
+  .carrusel,
+  .tarjetas1,
+  .tarjetas2,
+  .tarjetas3 {
+    padding: 40px 0;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 60% 30%;
+    grid-template-rows: 1fr;
+    .card {
+      width: 300px;
+      margin: 0 auto;
+    }
+    .contenidoBootstarp__texto {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      a {
+        @include botones;
+      }
+    }
+  }
+}

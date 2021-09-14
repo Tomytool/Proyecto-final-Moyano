@@ -5,38 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
     <title>Ejemplos con Sass</title>
   </head>
   <body>
-    <nav class="menu">
-      <a class="menu__logo" href="../index.html">
-        <svg
-          width="70"
-          height="70"
-          viewBox="0 0 70 70"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><svg
+            width="70"
+            height="70"
+            viewBox="0 0 70 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M35 70C54.33 70 70 54.33 70 35C70 15.67 54.33 0 35 0C15.67 0 0 15.67 0 35C0 54.33 15.67 70 35 70ZM29.2875 24.3872L29.6542 14.832H13.9265L14.2426 24.3872L16.0505 24.1593L18.0481 24.0682C18.1408 25.5164 18.2293 27 18.3135 28.5191C18.499 32.9042 18.6254 36.1197 18.6928 38.1654H24.812C25.0227 33.8714 25.1744 30.6155 25.2671 28.3976C25.3935 26.1088 25.482 24.6657 25.5326 24.0682C26.5356 24.0985 27.2604 24.1289 27.7072 24.1593C28.432 24.2504 28.9588 24.3264 29.2875 24.3872ZM42.052 33.7928C41.5885 33.6207 40.9943 33.5346 40.2694 33.5346C38.9208 33.5346 37.8251 33.9599 36.9823 34.8106C36.0298 35.7626 35.5536 37.1349 35.5536 38.9274C35.5536 40.325 35.9287 41.4744 36.6788 42.3757C37.4374 43.267 38.4278 43.7126 39.6499 43.7126C40.4843 43.7126 41.2766 43.4644 42.0268 42.9682C41.9425 43.3834 41.7992 44.148 41.5969 45.262C41.4789 46.0013 41.3651 46.771 41.2555 47.5711C40.3115 48.0065 39.1021 48.2243 37.6271 48.2243C34.9552 48.2243 32.6711 47.1457 30.7747 44.9886C28.7181 42.6391 27.6898 39.5806 27.6898 35.8132C27.6898 32.3295 28.5748 29.5141 30.3448 27.3671C32.2328 25.0783 34.8414 23.9339 38.1707 23.9339C39.7721 23.9339 40.931 24.0453 41.6475 24.2681L42.052 33.7928ZM51.8685 42.4959C52.0454 37.5436 52.1845 34.1104 52.2857 32.1964H43.5621C43.9667 36.2271 44.249 39.6602 44.4092 42.4959C44.662 47.6 44.7927 50.6585 44.8011 51.6712C44.3123 51.7624 43.7855 51.7522 43.2208 51.6408C42.1503 51.3471 41.4845 51.1294 41.2232 50.9876C41.3581 51.9801 41.4634 52.7599 41.5393 53.327C41.6573 54.3803 41.7331 55.1145 41.7668 55.5297C43.1576 55.8639 44.4598 56.031 45.6735 56.031C47.907 56.031 49.9467 55.1905 51.7926 53.5093C51.7252 50.3293 51.7505 46.6582 51.8685 42.4959Z"
+              fill="#040f11"
+            /></svg
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M35 70C54.33 70 70 54.33 70 35C70 15.67 54.33 0 35 0C15.67 0 0 15.67 0 35C0 54.33 15.67 70 35 70ZM29.2875 24.3872L29.6542 14.832H13.9265L14.2426 24.3872L16.0505 24.1593L18.0481 24.0682C18.1408 25.5164 18.2293 27 18.3135 28.5191C18.499 32.9042 18.6254 36.1197 18.6928 38.1654H24.812C25.0227 33.8714 25.1744 30.6155 25.2671 28.3976C25.3935 26.1088 25.482 24.6657 25.5326 24.0682C26.5356 24.0985 27.2604 24.1289 27.7072 24.1593C28.432 24.2504 28.9588 24.3264 29.2875 24.3872ZM42.052 33.7928C41.5885 33.6207 40.9943 33.5346 40.2694 33.5346C38.9208 33.5346 37.8251 33.9599 36.9823 34.8106C36.0298 35.7626 35.5536 37.1349 35.5536 38.9274C35.5536 40.325 35.9287 41.4744 36.6788 42.3757C37.4374 43.267 38.4278 43.7126 39.6499 43.7126C40.4843 43.7126 41.2766 43.4644 42.0268 42.9682C41.9425 43.3834 41.7992 44.148 41.5969 45.262C41.4789 46.0013 41.3651 46.771 41.2555 47.5711C40.3115 48.0065 39.1021 48.2243 37.6271 48.2243C34.9552 48.2243 32.6711 47.1457 30.7747 44.9886C28.7181 42.6391 27.6898 39.5806 27.6898 35.8132C27.6898 32.3295 28.5748 29.5141 30.3448 27.3671C32.2328 25.0783 34.8414 23.9339 38.1707 23.9339C39.7721 23.9339 40.931 24.0453 41.6475 24.2681L42.052 33.7928ZM51.8685 42.4959C52.0454 37.5436 52.1845 34.1104 52.2857 32.1964H43.5621C43.9667 36.2271 44.249 39.6602 44.4092 42.4959C44.662 47.6 44.7927 50.6585 44.8011 51.6712C44.3123 51.7624 43.7855 51.7522 43.2208 51.6408C42.1503 51.3471 41.4845 51.1294 41.2232 50.9876C41.3581 51.9801 41.4634 52.7599 41.5393 53.327C41.6573 54.3803 41.7331 55.1145 41.7668 55.5297C43.1576 55.8639 44.4598 56.031 45.6735 56.031C47.907 56.031 49.9467 55.1905 51.7926 53.5093C51.7252 50.3293 51.7505 46.6582 51.8685 42.4959Z"
-            fill="#EAEDF2"
-          />
-        </svg>
-      </a>
-
-      <ul class="menu__opciones">
-        <li class="item"><a href="css.html">CSS</a></li>
-        <li class="item"><a href="bootstrap.html">Bootstraps</a></li>
-        <li class="item"><a href="sass.html">Sass</a></li>
-        <li class="item"><a href="nosotros.html">¿Quienes Somos?</a></li>
-        <li class="item"><a href="contacto.html">Constacto</a></li>
-      </ul>
-      <a href="" class="menu__responsive"
-        ><img src="../assets/iconos/Icono_mobil.svg" alt=""
-      /></a>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="css.html"
+                >Css</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bootstrap.html">Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sass.html">Sass</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">¿Quienes somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    <header class="header">
+      <div class="header__fondo"></div>
+      <div class="header__texto">
+        <h1>Ejemplos de Css para practicar</h1>
+        <p>
+          Te invito a ver estos ejemplos de tarjetas y como las puedes estilisar
+          con css , tambien veras animaciones que te puedenayudar a practicar
+        </p>
+        <a href="#" class="boton">Contactanos</a>
+      </div>
+    </header>
+
+    <main class="ejemplosSass">
+      <div class="ejemplo1">
+        <section class="ejemplosSass__fondo">
+          <div class="imagen"></div>
+          <div class="texto">
+            <div class="texto__titulo">
+              <h1>Pantalla Principal</h1>
+            </div>
+            <div class="texto__buscador">
+              <input type="text" name=busqueda" id="busqueda" />
+
+              <span class="material-icons-outlined icono"> search </span>
+            </div>
+          </div>
+        </section>
+        <div class="ejemplosSass__texto">
+          <h2>Resultado de trabajar con Sass</h2>
+          <article>
+            Aqui podemos visualizar el trabajo terminado con los estilos en css
+            trabajados desde Sass
+          </article>
+          <a href="">Ir al Repositorio</a>
+        </div>
+      </div>
+      <div class="ejemplo2">
+        <section class="ejemplosSass__boton">
+          <div class="boton">
+            <div class="boton__fondo"></div>
+            <a class="boton__click" href="">Preciona</a>
+          </div>
+        </section>
+        <div class="ejemplosSass__texto">
+          <h2>Resultado de trabajar con Sass</h2>
+          <article>
+            Aqui encontraras un boton donde al pasar el mouse se creara un
+            efecto sobre el
+          </article>
+          <a href="">Ir al Repositorio</a>
+        </div>
+      </div>
+      <div class="ejemplo3">
+        <section class="ejemplosSass__chekbox"></section>
+      </div>
+    </main>
 
     <foorter class="footer">
       <div class="footer__logo">

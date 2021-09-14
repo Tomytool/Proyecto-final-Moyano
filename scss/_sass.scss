@@ -1,0 +1,114 @@
+@mixin grilla {
+  display: grid;
+  grid-template-columns: 65% 25%;
+  grid-template-rows: 400px;
+  padding: 30px;
+}
+.ejemplosSass {
+  background-color: $color_fondo;
+  .ejemplo1 {
+    @include grilla;
+
+    .ejemplosSass__fondo {
+      width: 90%;
+      position: relative;
+      .imagen {
+        border: 1px solid black;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url('../assets/img/img_fondo_formulario.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .texto {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.459);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .texto__titulo {
+          color: white;
+        }
+        .texto__buscador {
+          margin-top: 20px;
+          width: 60%;
+          background-color: white;
+          height: 40px;
+          border-radius: 50px;
+          display: flex;
+          justify-content: space-between;
+          input {
+            width: 90%;
+            border: none;
+            border-radius: 50px 0px 0px 50px;
+          }
+          span {
+            font-size: 40px;
+            margin-right: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .ejemplosSass__texto {
+      margin: auto 0;
+      a {
+        @include botones;
+      }
+    }
+  }
+  .ejemplo2 {
+    @include grilla;
+    .ejemplosSass__boton {
+      width: 90%;
+      height: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .boton {
+        background-color: black;
+        width: 250px;
+        height: 60px;
+        text-align: center;
+        position: relative;
+        .boton__fondo {
+          width: 252px;
+          height: 62px;
+          position: absolute;
+          top: -1px;
+          left: -1px;
+        }
+        a {
+          width: 100%;
+          height: 100%;
+          left: 0px;
+          top: 0px;
+          background-color: black;
+          position: absolute;
+          font-size: 45px;
+          margin: auto 0;
+          text-decoration: none;
+          color: white;
+        }
+      }
+
+      .boton:hover {
+        .boton__fondo {
+          background-color: yellow;
+        }
+      }
+    }
+    .ejemplosSass__texto {
+      margin: auto 0;
+      a {
+        @include botones;
+      }
+    }
+  }
+}

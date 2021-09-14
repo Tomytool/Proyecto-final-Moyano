@@ -19,31 +19,12 @@
 }
 
 // menu inicial de la pagina
-.menu {
-  display: flex;
-  justify-content: space-around;
-  background-color: $color_menu;
-  padding: 10px;
-  .menu__logo {
-    height: 100%;
+.navbar {
+  a {
+    font-size: 24px;
   }
-  .menu__opciones {
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 200px);
-    grid-template-rows: 1f;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    .item {
-      list-style: none;
-      margin-left: 10px;
-      text-align: center;
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.5em;
-      }
-    }
+  .nav-item {
+    margin-left: 20px;
   }
 }
 // seccion de cabecera
@@ -108,6 +89,7 @@
     }
   }
 }
+
 // seccion de libros destacados
 .seccionDestacados {
   display: flex;
@@ -141,6 +123,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   background-color: $color_menu;
   padding: 5px 0;
@@ -160,5 +143,9 @@
   }
 }
 
-@import 'ejemplos';
+@import 'css';
 @import 'contacto';
+@import 'bootstrap';
+@import 'sass';
+@media (max-width: 768px) {
+}
