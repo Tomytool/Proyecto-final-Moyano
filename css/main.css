@@ -11123,6 +11123,7 @@ textarea.form-control-lg {
   display: flex;
   justify-content: space-around;
   background-color: #040f11;
+  padding: 10px;
 }
 .menu .menu__logo {
   height: 100%;
@@ -11256,6 +11257,27 @@ textarea.form-control-lg {
   font-size: 24px;
   background: #13505b;
   border-radius: 10px;
+}
+
+.footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #040f11;
+  padding: 5px 0;
+}
+.footer .footer__logo {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+.footer .footer__red {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=main.css.map */

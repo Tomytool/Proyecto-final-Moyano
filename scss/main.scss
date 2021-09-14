@@ -23,6 +23,7 @@
   display: flex;
   justify-content: space-around;
   background-color: $color_menu;
+  padding: 10px;
   .menu__logo {
     height: 100%;
   }
@@ -128,5 +129,27 @@
         @include botones;
       }
     }
+  }
+}
+
+// seccion del footer
+.footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color_menu;
+  padding: 5px 0;
+  .footer__logo {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    border-bottom: 2px solid white;
+  }
+  .footer__red {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
   }
 }
