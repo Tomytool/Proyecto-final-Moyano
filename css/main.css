@@ -11268,16 +11268,11 @@ textarea.form-control-lg {
 
 .ejemplos {
   background-color: #d4dcff;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 .ejemplos .ejemplos__card {
   width: 100%;
-  display: flex;
 }
 .ejemplos .ejemplos__card .ejemplos__demostracion {
-  width: 100%;
   padding: 50px;
   margin: 0 auto;
 }
@@ -11437,7 +11432,6 @@ textarea.form-control-lg {
 }
 .ejemplos .ejemplos__card .ejemplos__descripcion {
   margin: 0 auto;
-  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11479,9 +11473,6 @@ textarea.form-control-lg {
 .contenidoBootstrap .tarjetas3 {
   padding: 40px 0;
   width: 90%;
-  display: grid;
-  grid-template-columns: 60% 30%;
-  grid-template-rows: 1fr;
 }
 .contenidoBootstrap .carrusel .card,
 .contenidoBootstrap .tarjetas1 .card,

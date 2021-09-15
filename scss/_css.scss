@@ -1,6 +1,5 @@
 @mixin texto_alineado {
   margin: 0 auto;
-  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,15 +23,10 @@
 
 .ejemplos {
   background-color: $color_fondo;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   .ejemplos__card {
     width: 100%;
-    display: flex;
-
     .ejemplos__demostracion {
-      width: 100%;
+      // width: 100%;
       padding: 50px;
       margin: 0 auto;
 
