@@ -11509,29 +11509,19 @@ textarea.form-control-lg {
   background-color: #d4dcff;
 }
 .ejemplosSass .ejemplo1 {
-  display: grid;
-  grid-template-columns: 65% 25%;
-  grid-template-rows: 400px;
   padding: 30px;
 }
 .ejemplosSass .ejemplo1 .ejemplosSass__fondo {
-  width: 90%;
-  position: relative;
-}
-.ejemplosSass .ejemplo1 .ejemplosSass__fondo .imagen {
-  border: 1px solid black;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("../assets/img/img_fondo_formulario.jpg");
+  background-image: url("../assets/img/fondo_ejemplo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 400px;
+  position: relative;
 }
 .ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.459);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11541,28 +11531,22 @@ textarea.form-control-lg {
   color: white;
 }
 .ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto .texto__buscador {
-  margin-top: 20px;
-  width: 60%;
-  background-color: white;
-  height: 40px;
   border-radius: 50px;
-  display: flex;
-  justify-content: space-between;
+  background-color: white;
+  padding: 5px 15px;
 }
 .ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto .texto__buscador input {
-  width: 90%;
-  border: none;
-  border-radius: 50px 0px 0px 50px;
-}
-.ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto .texto__buscador span {
-  font-size: 40px;
-  margin-right: 10px;
-  cursor: pointer;
+  border: 1px solid white;
 }
 .ejemplosSass .ejemplo1 .ejemplosSass__texto {
-  margin: auto 0;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .ejemplosSass .ejemplo1 .ejemplosSass__texto a {
+  margin-top: 10px;
   text-decoration: none;
   width: 300px;
   height: 48px;
@@ -11574,15 +11558,8 @@ textarea.form-control-lg {
   background: #13505b;
   border-radius: 10px;
 }
-.ejemplosSass .ejemplo2 {
-  display: grid;
-  grid-template-columns: 65% 25%;
-  grid-template-rows: 400px;
-  padding: 30px;
-}
 .ejemplosSass .ejemplo2 .ejemplosSass__boton {
-  width: 90%;
-  height: 100%;
+  height: 400px;
   background-color: black;
   display: flex;
   justify-content: center;

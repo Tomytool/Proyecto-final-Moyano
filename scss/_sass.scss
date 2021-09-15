@@ -1,31 +1,18 @@
-@mixin grilla {
-  display: grid;
-  grid-template-columns: 65% 25%;
-  grid-template-rows: 400px;
-  padding: 30px;
-}
 .ejemplosSass {
   background-color: $color_fondo;
   .ejemplo1 {
-    @include grilla;
+    padding: 30px;
 
     .ejemplosSass__fondo {
-      width: 90%;
+      background-image: url('../assets/img/fondo_ejemplo.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 400px;
       position: relative;
-      .imagen {
-        border: 1px solid black;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-image: url('../assets/img/img_fondo_formulario.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
       .texto {
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.459);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -34,38 +21,30 @@
           color: white;
         }
         .texto__buscador {
-          margin-top: 20px;
-          width: 60%;
-          background-color: white;
-          height: 40px;
           border-radius: 50px;
-          display: flex;
-          justify-content: space-between;
+          background-color: white;
+          padding: 5px 15px;
           input {
-            width: 90%;
-            border: none;
-            border-radius: 50px 0px 0px 50px;
-          }
-          span {
-            font-size: 40px;
-            margin-right: 10px;
-            cursor: pointer;
+            border: 1px solid white;
           }
         }
       }
     }
     .ejemplosSass__texto {
-      margin: auto 0;
+      height: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       a {
+        margin-top: 10px;
         @include botones;
       }
     }
   }
   .ejemplo2 {
-    @include grilla;
     .ejemplosSass__boton {
-      width: 90%;
-      height: 100%;
+      height: 400px;
       background-color: black;
       display: flex;
       justify-content: center;
