@@ -60,62 +60,58 @@
 .main {
   width: 100vw;
   height: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 100px;
-  .main__card {
-    width: 300px;
-    box-shadow: 4px 4px 10px black;
-    border-radius: 10px;
-    img {
-      width: 100%;
-      height: 205px;
+  .main__seccionOpciones {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px;
+    .main__card {
+      width: 300px;
+      margin-top: 20px;
+      box-shadow: 4px 4px 10px black;
       border-radius: 10px;
-    }
-    .main__cardTexto {
-      display: flex;
-      flex-direction: column;
-      margin: 30px 15px;
-      h2 {
-        font-size: 24px;
+      img {
+        width: 100%;
+        height: 205px;
+        border-radius: 10px;
       }
+      .main__cardTexto {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 15px;
+        h2 {
+          font-size: 24px;
+        }
+        a {
+          @include botones;
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .main__librosDestacados {
+    width: 60%;
+    box-shadow: 4px 4px 10px black;
+    img {
+      margin: 0 auto;
+    }
+    .textoLibro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       a {
         @include botones;
-        width: 90%;
-        margin: 0 auto;
+        margin-bottom: 20px;
       }
     }
   }
 }
 
 // seccion de libros destacados
-.seccionDestacados {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background: $degradado;
-  .seccionLibros {
-    background-color: $color_descricion;
-    width: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px 10px 10px 0px;
-    box-shadow: 4px 4px 10px black;
-    margin: 60px 0px;
-    img {
-      width: 250px;
-    }
-    .seccionLibros__descripcion {
-      margin-left: 50px;
-      .boton {
-        @include botones;
-      }
-    }
-  }
-}
 
 // seccion del footer
 .footer {
@@ -147,4 +143,3 @@
 @import 'contacto';
 @import 'bootstrap';
 @import 'sass';
-@import 'mediaquery';

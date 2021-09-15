@@ -11167,31 +11167,35 @@ textarea.form-control-lg {
 .main {
   width: 100vw;
   height: auto;
+}
+.main .main__seccionOpciones {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   padding: 100px;
 }
-.main .main__card {
+.main .main__seccionOpciones .main__card {
   width: 300px;
+  margin-top: 20px;
   box-shadow: 4px 4px 10px black;
   border-radius: 10px;
 }
-.main .main__card img {
+.main .main__seccionOpciones .main__card img {
   width: 100%;
   height: 205px;
   border-radius: 10px;
 }
-.main .main__card .main__cardTexto {
+.main .main__seccionOpciones .main__card .main__cardTexto {
   display: flex;
   flex-direction: column;
   margin: 30px 15px;
 }
-.main .main__card .main__cardTexto h2, .main .main__card .main__cardTexto .h2 {
+.main .main__seccionOpciones .main__card .main__cardTexto h2, .main .main__seccionOpciones .main__card .main__cardTexto .h2 {
   font-size: 24px;
 }
-.main .main__card .main__cardTexto a {
+.main .main__seccionOpciones .main__card .main__cardTexto a {
   text-decoration: none;
   width: 300px;
   height: 48px;
@@ -11205,30 +11209,20 @@ textarea.form-control-lg {
   width: 90%;
   margin: 0 auto;
 }
-
-.seccionDestacados {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background: linear-gradient(180deg, white 0%, #c5e2fc 19%);
+.main .main__librosDestacados {
+  width: 60%;
+  box-shadow: 4px 4px 10px black;
 }
-.seccionDestacados .seccionLibros {
-  background-color: #d7d9ce;
-  width: 800px;
+.main .main__librosDestacados img {
+  margin: 0 auto;
+}
+.main .main__librosDestacados .textoLibro {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0px 10px 10px 0px;
-  box-shadow: 4px 4px 10px black;
-  margin: 60px 0px;
+  flex-direction: column;
 }
-.seccionDestacados .seccionLibros img {
-  width: 250px;
-}
-.seccionDestacados .seccionLibros .seccionLibros__descripcion {
-  margin-left: 50px;
-}
-.seccionDestacados .seccionLibros .seccionLibros__descripcion .boton {
+.main .main__librosDestacados .textoLibro a {
   text-decoration: none;
   width: 300px;
   height: 48px;
@@ -11239,6 +11233,7 @@ textarea.form-control-lg {
   font-size: 24px;
   background: #13505b;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .footer {
