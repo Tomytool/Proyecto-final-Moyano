@@ -1,6 +1,7 @@
 .ejemplosSass {
   background-color: $color_fondo;
-  .ejemplo1 {
+  .ejemplo1,
+  .ejemplo2 {
     padding: 30px;
 
     .ejemplosSass__fondo {
@@ -36,6 +37,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       a {
         margin-top: 10px;
         @include botones;

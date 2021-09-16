@@ -11130,9 +11130,6 @@ textarea.form-control-lg {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-image: url("../assets/img/Home.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .header .header__fondo {
   position: absolute;
@@ -11151,6 +11148,9 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%;
 }
+.header .header__texto p {
+  width: 70%;
+}
 .header .header__texto a {
   text-decoration: none;
   width: 300px;
@@ -11162,6 +11162,42 @@ textarea.form-control-lg {
   font-size: 24px;
   background: #13505b;
   border-radius: 10px;
+}
+
+.index {
+  background-image: url("../assets/img/Home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.css {
+  background-image: url("../assets/img/e-book-1209040_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bootstrap {
+  background-image: url("../assets/img/books-on-ledge.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sass {
+  background-image: url("../assets/img/fondo_ejemplo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nosotros {
+  background-image: url("../assets/img/img_fondo_nosotros.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacto {
+  background-image: url("../assets/img/img_fondo_formulario.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main {
@@ -11451,7 +11487,7 @@ textarea.form-control-lg {
 .header_contacto .contacto_formulario {
   width: 70%;
   padding: 20px 20px;
-  background-color: #0c74896e;
+  background-color: #0c7489a8;
 }
 
 .contenidoBootstrap {
@@ -11503,17 +11539,20 @@ textarea.form-control-lg {
 .ejemplosSass {
   background-color: #d4dcff;
 }
-.ejemplosSass .ejemplo1 {
+.ejemplosSass .ejemplo1,
+.ejemplosSass .ejemplo2 {
   padding: 30px;
 }
-.ejemplosSass .ejemplo1 .ejemplosSass__fondo {
+.ejemplosSass .ejemplo1 .ejemplosSass__fondo,
+.ejemplosSass .ejemplo2 .ejemplosSass__fondo {
   background-image: url("../assets/img/fondo_ejemplo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
   position: relative;
 }
-.ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto {
+.ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto,
+.ejemplosSass .ejemplo2 .ejemplosSass__fondo .texto {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -11522,25 +11561,31 @@ textarea.form-control-lg {
   align-items: center;
   flex-direction: column;
 }
-.ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto .texto__titulo {
+.ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto .texto__titulo,
+.ejemplosSass .ejemplo2 .ejemplosSass__fondo .texto .texto__titulo {
   color: white;
 }
-.ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto .texto__buscador {
+.ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto .texto__buscador,
+.ejemplosSass .ejemplo2 .ejemplosSass__fondo .texto .texto__buscador {
   border-radius: 50px;
   background-color: white;
   padding: 5px 15px;
 }
-.ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto .texto__buscador input {
+.ejemplosSass .ejemplo1 .ejemplosSass__fondo .texto .texto__buscador input,
+.ejemplosSass .ejemplo2 .ejemplosSass__fondo .texto .texto__buscador input {
   border: 1px solid white;
 }
-.ejemplosSass .ejemplo1 .ejemplosSass__texto {
+.ejemplosSass .ejemplo1 .ejemplosSass__texto,
+.ejemplosSass .ejemplo2 .ejemplosSass__texto {
   height: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-.ejemplosSass .ejemplo1 .ejemplosSass__texto a {
+.ejemplosSass .ejemplo1 .ejemplosSass__texto a,
+.ejemplosSass .ejemplo2 .ejemplosSass__texto a {
   margin-top: 10px;
   text-decoration: none;
   width: 300px;
