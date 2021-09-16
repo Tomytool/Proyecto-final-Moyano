@@ -46,15 +46,11 @@
     align-items: center;
     flex-direction: column;
     color: white;
-
     position: absolute;
     width: 100%;
     height: 100%;
     text-align: center;
 
-    p {
-      width: 70%;
-    }
     a {
       @include botones;
     }
@@ -177,3 +173,4 @@
 @import 'contacto';
 @import 'bootstrap';
 @import 'sass';
+@import 'nosotros';
