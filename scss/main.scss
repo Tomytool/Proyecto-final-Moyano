@@ -99,6 +99,7 @@
     padding: 100px;
     .main__card {
       width: 300px;
+      min-width: 300px;
       margin-top: 20px;
       box-shadow: 4px 4px 10px black;
       border-radius: 10px;
@@ -124,9 +125,9 @@
   }
   .main__librosDestacados {
     width: 60%;
-    box-shadow: 4px 4px 10px black;
     img {
       width: 300px;
+      min-height: 300px;
       margin: 0 auto;
     }
     .textoLibro {
@@ -141,8 +142,6 @@
     }
   }
 }
-
-// seccion de libros destacados
 
 // seccion del footer
 .footer {
