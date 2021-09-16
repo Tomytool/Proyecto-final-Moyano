@@ -11248,6 +11248,7 @@ textarea.form-control-lg {
   box-shadow: 4px 4px 10px black;
 }
 .main .main__librosDestacados img {
+  width: 300px;
   margin: 0 auto;
 }
 .main .main__librosDestacados .textoLibro {
