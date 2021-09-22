@@ -8,7 +8,7 @@
 @mixin boton_card {
   color: white;
   width: 120px;
-  padding: 5px;
+  padding: 5px 0;
   font-size: 24px;
   background-color: #38726c;
   border-radius: 9px;
@@ -16,24 +16,26 @@
   text-decoration: none;
 }
 @mixin diseno_card {
-  box-shadow: 4px 4px 10px;
+  margin-top: 20px;
+  // box-shadow: 4px 4px 10px;
   border-radius: 10px;
   background-color: $color_descricion;
 }
 
 .ejemplos {
   background-color: $color_fondo;
+  width: 100vw;
   .ejemplos__card {
     width: 100%;
+    margin-left: 0px;
     .ejemplos__demostracion {
-      // width: 100%;
-      padding: 50px;
-      margin: 0 auto;
+      margin: 40px auto;
 
       //   ejemplo card
       .card {
         margin: 0 auto;
-        width: 300px;
+        width: 95%;
+        max-width: 300px;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -49,7 +51,7 @@
         .card__texto {
           width: 100%;
           color: black;
-          margin: 0 auto;
+          margin: 40px auto;
           h2 {
             padding: 10px;
           }
@@ -57,7 +59,7 @@
             padding: 10px;
           }
           .boton {
-            width: 100%;
+            width: 90%;
             display: flex;
             justify-content: center;
             text-align: center;
@@ -68,7 +70,7 @@
         }
       }
       .card:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
         z-index: 2;
       }
 
@@ -76,7 +78,8 @@
       .card1 {
         margin: 0 auto;
         // border: 1px solid black;
-        width: 300px;
+        width: 90%;
+        max-width: 300px;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -117,7 +120,8 @@
       .card2 {
         margin: 0 auto;
         position: relative;
-        width: 300px;
+        width: 100%;
+        max-width: 300px;
         height: 350px;
         @include diseno_card;
 
@@ -157,16 +161,16 @@
           }
         }
       }
-    }
-    .card2:hover {
-      img {
-        transform: translate(0px, -100px);
-        transition: transform 2s;
-      }
-      .card2__texto {
-        opacity: 1;
-        transition: opacity 0.1s;
-        transition-delay: 1s;
+      .card2:hover {
+        img {
+          transform: translate(0px, -100px);
+          transition: transform 2s;
+        }
+        .card2__texto {
+          opacity: 1;
+          transition: opacity 0.1s;
+          transition-delay: 1s;
+        }
       }
     }
     .ejemplos__descripcion {

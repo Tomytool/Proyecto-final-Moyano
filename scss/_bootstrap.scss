@@ -10,17 +10,26 @@
   .tarjetas1,
   .tarjetas2,
   .tarjetas3 {
-    padding: 40px 0;
+    margin: 0;
+    padding: 0;
     width: 90%;
-
+    .tarjetas1__ejemplo,
+    .tarjetas2__ejemplo,
+    .tarjetas3__ejemplo,
+    .carrusel__ejemplo {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
     .card {
-      width: 300px;
+      width: 90%;
       margin: 0 auto;
     }
     .contenidoBootstarp__texto {
+      margin-top: 20px;
       display: flex;
       flex-direction: column;
-      padding: 20px;
+      justify-content: center;
+      align-items: center;
       a {
         @include botones;
       }

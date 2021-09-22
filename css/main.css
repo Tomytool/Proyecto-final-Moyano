@@ -11150,6 +11150,7 @@ textarea.form-control-lg {
   text-align: center;
 }
 .header .header__texto a {
+  margin: 30px 0;
   text-decoration: none;
   width: 300px;
   height: 48px;
@@ -11163,37 +11164,37 @@ textarea.form-control-lg {
 }
 
 .index {
-  background-image: url("../assets/img/Home.png");
+  background-image: url("../assets/img/foto1__100.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .css {
-  background-image: url("../assets/img/e-book-1209040_1920.jpg");
+  background-image: url("../assets/img/foto2__100.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bootstrap {
-  background-image: url("../assets/img/books-on-ledge.jpg");
+  background-image: url("../assets/img/foto3__100.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .sass {
-  background-image: url("../assets/img/fondo_ejemplo.jpg");
+  background-image: url("../assets/img/foto4__100.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .nosotros {
-  background-image: url("../assets/img/img_fondo_nosotros.jpg");
+  background-image: url("../assets/img/foto5__100.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .contacto {
-  background-image: url("../assets/img/img_fondo_formulario.jpg");
+  background-image: url("../assets/img/foto6__100.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11212,7 +11213,7 @@ textarea.form-control-lg {
 }
 .main .main__seccionOpciones .main__card {
   width: 300px;
-  min-width: 300px;
+  min-width: 250px;
   margin-top: 20px;
   box-shadow: 4px 4px 10px black;
   border-radius: 10px;
@@ -11231,6 +11232,7 @@ textarea.form-control-lg {
   font-size: 24px;
 }
 .main .main__seccionOpciones .main__card .main__cardTexto a {
+  margin: 30px 0;
   text-decoration: none;
   width: 300px;
   height: 48px;
@@ -11244,21 +11246,33 @@ textarea.form-control-lg {
   width: 90%;
   margin: 0 auto;
 }
-.main .main__librosDestacados {
-  width: 60%;
-}
-.main .main__librosDestacados img {
-  width: 300px;
-  min-height: 300px;
-  margin: 0 auto;
-}
-.main .main__librosDestacados .textoLibro {
-  display: flex;
-  justify-content: center;
+.main .librosDestacados {
+  background-color: #adc2c4;
+  border-radius: 12px;
+  margin: 40px auto;
+  width: 65%;
+  display: grid;
+  grid-template-columns: 10px 1fr 1fr 10px;
+  grid-template-rows: 20px 1fr 20px;
+  justify-items: center;
   align-items: center;
-  flex-direction: column;
 }
-.main .main__librosDestacados .textoLibro a {
+.main .librosDestacados img {
+  width: 300px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.main .librosDestacados .libroDestacado__texto {
+  width: 100%;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.main .librosDestacados .libroDestacado__texto a {
+  margin: 30px 0;
   text-decoration: none;
   width: 300px;
   height: 48px;
@@ -11269,7 +11283,138 @@ textarea.form-control-lg {
   font-size: 24px;
   background: #13505b;
   border-radius: 10px;
-  margin-bottom: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .main .index {
+    background-image: url("../assets/img/foto1__50.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .css {
+    background-image: url("../assets/img/foto2__50.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .bootstrap {
+    background-image: url("../assets/img/foto3__50.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .sass {
+    background-image: url("../assets/img/foto4__50.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .nosotros {
+    background-image: url("../assets/img/foto5__50.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .contacto {
+    background-image: url("../assets/img/foto6__50.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .librosDestacados {
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: 20px 1fr 1fr 20px;
+  }
+  .main .librosDestacados img {
+    width: 300px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .main .librosDestacados .libroDestacado__texto {
+    width: 80%;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .main .librosDestacados .libroDestacado__texto a {
+    margin: 30px 0;
+    text-decoration: none;
+    width: 300px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    background: #13505b;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 425px) {
+  .main .index {
+    background-image: url("../assets/img/foto1__25.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .css {
+    background-image: url("../assets/img/foto2__25.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .bootstrap {
+    background-image: url("../assets/img/foto3__25.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .sass {
+    background-image: url("../assets/img/foto4__25.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .nosotros {
+    background-image: url("../assets/img/foto5__25.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .contacto {
+    background-image: url("../assets/img/foto6__25.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .librosDestacados {
+    grid-template-columns: 10px 1fr 10px;
+    grid-template-rows: 10px 1fr 1fr 10px;
+  }
+  .main .librosDestacados img {
+    width: 90%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .main .librosDestacados .libroDestacado__texto {
+    width: 80%;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .main .librosDestacados .libroDestacado__texto a {
+    margin: 30px 0;
+    text-decoration: none;
+    width: 300px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    background: #13505b;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .footer {
@@ -11299,21 +11444,23 @@ textarea.form-control-lg {
 
 .ejemplos {
   background-color: #d4dcff;
+  width: 100vw;
 }
 .ejemplos .ejemplos__card {
   width: 100%;
+  margin-left: 0px;
 }
 .ejemplos .ejemplos__card .ejemplos__demostracion {
-  padding: 50px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 .ejemplos .ejemplos__card .ejemplos__demostracion .card {
   margin: 0 auto;
-  width: 300px;
+  width: 95%;
+  max-width: 300px;
   height: auto;
   display: flex;
   flex-direction: column;
-  box-shadow: 4px 4px 10px;
+  margin-top: 20px;
   border-radius: 10px;
   background-color: #d7d9ce;
 }
@@ -11327,7 +11474,7 @@ textarea.form-control-lg {
 .ejemplos .ejemplos__card .ejemplos__demostracion .card .card__texto {
   width: 100%;
   color: black;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 .ejemplos .ejemplos__card .ejemplos__demostracion .card .card__texto h2, .ejemplos .ejemplos__card .ejemplos__demostracion .card .card__texto .h2 {
   padding: 10px;
@@ -11336,7 +11483,7 @@ textarea.form-control-lg {
   padding: 10px;
 }
 .ejemplos .ejemplos__card .ejemplos__demostracion .card .card__texto .boton {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -11344,7 +11491,7 @@ textarea.form-control-lg {
 .ejemplos .ejemplos__card .ejemplos__demostracion .card .card__texto .boton a {
   color: white;
   width: 120px;
-  padding: 5px;
+  padding: 5px 0;
   font-size: 24px;
   background-color: #38726c;
   border-radius: 9px;
@@ -11352,16 +11499,17 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 .ejemplos .ejemplos__card .ejemplos__demostracion .card:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   z-index: 2;
 }
 .ejemplos .ejemplos__card .ejemplos__demostracion .card1 {
   margin: 0 auto;
-  width: 300px;
+  width: 90%;
+  max-width: 300px;
   height: auto;
   display: flex;
   flex-direction: column;
-  box-shadow: 4px 4px 10px;
+  margin-top: 20px;
   border-radius: 10px;
   background-color: #d7d9ce;
 }
@@ -11391,7 +11539,7 @@ textarea.form-control-lg {
 .ejemplos .ejemplos__card .ejemplos__demostracion .card1 .card1__texto .boton a {
   color: white;
   width: 120px;
-  padding: 5px;
+  padding: 5px 0;
   font-size: 24px;
   background-color: #38726c;
   border-radius: 9px;
@@ -11404,9 +11552,10 @@ textarea.form-control-lg {
 .ejemplos .ejemplos__card .ejemplos__demostracion .card2 {
   margin: 0 auto;
   position: relative;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 350px;
-  box-shadow: 4px 4px 10px;
+  margin-top: 20px;
   border-radius: 10px;
   background-color: #d7d9ce;
 }
@@ -11445,18 +11594,18 @@ textarea.form-control-lg {
 .ejemplos .ejemplos__card .ejemplos__demostracion .card2 .card2__texto .boton a {
   color: white;
   width: 120px;
-  padding: 5px;
+  padding: 5px 0;
   font-size: 24px;
   background-color: #38726c;
   border-radius: 9px;
   margin-bottom: 10px;
   text-decoration: none;
 }
-.ejemplos .ejemplos__card .card2:hover img {
+.ejemplos .ejemplos__card .ejemplos__demostracion .card2:hover img {
   transform: translate(0px, -100px);
   transition: transform 2s;
 }
-.ejemplos .ejemplos__card .card2:hover .card2__texto {
+.ejemplos .ejemplos__card .ejemplos__demostracion .card2:hover .card2__texto {
   opacity: 1;
   transition: opacity 0.1s;
   transition-delay: 1s;
@@ -11469,6 +11618,7 @@ textarea.form-control-lg {
   flex-direction: column;
 }
 .ejemplos .ejemplos__card .ejemplos__descripcion a {
+  margin: 30px 0;
   text-decoration: none;
   width: 300px;
   height: 48px;
@@ -11502,28 +11652,51 @@ textarea.form-control-lg {
 .contenidoBootstrap .tarjetas1,
 .contenidoBootstrap .tarjetas2,
 .contenidoBootstrap .tarjetas3 {
-  padding: 40px 0;
+  margin: 0;
+  padding: 0;
   width: 90%;
+}
+.contenidoBootstrap .carrusel .tarjetas1__ejemplo,
+.contenidoBootstrap .carrusel .tarjetas2__ejemplo,
+.contenidoBootstrap .carrusel .tarjetas3__ejemplo,
+.contenidoBootstrap .carrusel .carrusel__ejemplo,
+.contenidoBootstrap .tarjetas1 .tarjetas1__ejemplo,
+.contenidoBootstrap .tarjetas1 .tarjetas2__ejemplo,
+.contenidoBootstrap .tarjetas1 .tarjetas3__ejemplo,
+.contenidoBootstrap .tarjetas1 .carrusel__ejemplo,
+.contenidoBootstrap .tarjetas2 .tarjetas1__ejemplo,
+.contenidoBootstrap .tarjetas2 .tarjetas2__ejemplo,
+.contenidoBootstrap .tarjetas2 .tarjetas3__ejemplo,
+.contenidoBootstrap .tarjetas2 .carrusel__ejemplo,
+.contenidoBootstrap .tarjetas3 .tarjetas1__ejemplo,
+.contenidoBootstrap .tarjetas3 .tarjetas2__ejemplo,
+.contenidoBootstrap .tarjetas3 .tarjetas3__ejemplo,
+.contenidoBootstrap .tarjetas3 .carrusel__ejemplo {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .contenidoBootstrap .carrusel .card,
 .contenidoBootstrap .tarjetas1 .card,
 .contenidoBootstrap .tarjetas2 .card,
 .contenidoBootstrap .tarjetas3 .card {
-  width: 300px;
+  width: 90%;
   margin: 0 auto;
 }
 .contenidoBootstrap .carrusel .contenidoBootstarp__texto,
 .contenidoBootstrap .tarjetas1 .contenidoBootstarp__texto,
 .contenidoBootstrap .tarjetas2 .contenidoBootstarp__texto,
 .contenidoBootstrap .tarjetas3 .contenidoBootstarp__texto {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .contenidoBootstrap .carrusel .contenidoBootstarp__texto a,
 .contenidoBootstrap .tarjetas1 .contenidoBootstarp__texto a,
 .contenidoBootstrap .tarjetas2 .contenidoBootstarp__texto a,
 .contenidoBootstrap .tarjetas3 .contenidoBootstarp__texto a {
+  margin: 30px 0;
   text-decoration: none;
   width: 300px;
   height: 48px;
@@ -11577,7 +11750,7 @@ textarea.form-control-lg {
 }
 .ejemplosSass .ejemplo1 .ejemplosSass__texto,
 .ejemplosSass .ejemplo2 .ejemplosSass__texto {
-  height: 100%;
+  height: 400px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -11587,6 +11760,7 @@ textarea.form-control-lg {
 .ejemplosSass .ejemplo1 .ejemplosSass__texto a,
 .ejemplosSass .ejemplo2 .ejemplosSass__texto a {
   margin-top: 10px;
+  margin: 30px 0;
   text-decoration: none;
   width: 300px;
   height: 48px;
@@ -11635,9 +11809,16 @@ textarea.form-control-lg {
   background-color: yellow;
 }
 .ejemplosSass .ejemplo2 .ejemplosSass__texto {
-  margin: auto 0;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .ejemplosSass .ejemplo2 .ejemplosSass__texto a {
+  margin-top: 10px;
+  margin: 30px 0;
   text-decoration: none;
   width: 300px;
   height: 48px;
