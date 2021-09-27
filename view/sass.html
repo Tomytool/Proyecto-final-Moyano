@@ -68,33 +68,36 @@
       <div class="header__texto">
         <h1>Ejemplos de Sass para practicar</h1>
         <p>
-          Te invito a ver estos ejemplos de tarjetas y como las puedes estilisar
-          con css , tambien veras animaciones que te puedenayudar a practicar
+          Aquí encontraras algunos ejemplos hechos con SASS que es un
+          preprocesador el cual te ayudara a que tus estilos CSS sean más
+          fáciles de mantener y por sobre todo es muy divertido de programar, te
+          invito a que le des un vistazo a mi repositorio donde encontraras el
+          código de los ejemplos mostrados…
         </p>
         <a href="contacto.html" class="boton">Contactanos</a>
       </div>
     </header>
 
-    <main class="ejemplosSass container-fluid p-3">
+    <main class="ejemplosSass container-fluid">
       <div class="ejemplo1 row">
         <section class="ejemplosSass__fondo col-12 col-md-6">
-          <div class="imagen">
-            <div class="texto">
-              <div class="texto__titulo">
-                <h1>Pantalla Principal</h1>
-              </div>
-              <div class="texto__buscador">
-                <input type="text" name=busqueda" id="busqueda" />
-                <span class="material-icons-outlined icono"> search </span>
-              </div>
+          <div class="texto">
+            <div class="texto__titulo">
+              <h1>Pantalla Principal</h1>
+            </div>
+            <div class="texto__buscador">
+              <input type="text" name=busqueda" id="busqueda" />
+              <span class="material-icons-outlined icono"> search </span>
             </div>
           </div>
         </section>
         <seccion class="ejemplosSass__texto col-12 col-md-6">
           <h2>Resultado de trabajar con Sass</h2>
           <article>
-            Aqui podemos visualizar el trabajo terminado con los estilos en css
-            trabajados desde Sass
+            Este ejemplo se ve un maquetado de una pagina de inicio el cual esta
+            hecho con SASS el cual después de compilar queda el CSS terminado,
+            es muy fácil ya que las posibilidades que tienes de hacerlo con
+            flexbox o grid.
           </article>
           <a href="https://github.com/Tomytool/Fondo_con_imagenes.git"
             >Ir al Repositorio</a
@@ -105,14 +108,15 @@
         <section class="ejemplosSass__boton col-12 col-md-6">
           <div class="boton">
             <div class="boton__fondo"></div>
-            <a class="boton__click" href="">Preciona</a>
+            <a class="boton__click" href="">Presiona</a>
           </div>
         </section>
         <div class="ejemplosSass__texto col-12 col-md-6">
           <h2>Resultado de trabajar con Sass</h2>
           <article>
-            Aqui encontraras un boton donde al pasar el mouse se creara un
-            efecto sobre el
+            Este ejemplo es entre las muchas alternativas de poder animar un
+            botón o link, para así darle al usuario la posibilidad de saber que
+            este es un botón y al hacer click en el lo llevara al lugar deseado.
           </article>
           <a href="https://github.com/Tomytool/Boton_interactivo.git"
             >Ir al Repositorio</a
@@ -144,45 +148,57 @@
         <a href="mailto:tomytool@gmail.com">tomytool@gmail.com</a>
       </div>
       <div class="footer__red">
-        <!-- red social facebook -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="70"
-          height="70"
-          fill="none"
-          viewBox="0 0 70 70"
-        >
-          <path
-            fill="white"
-            d="M35 5.95c-16.042 0-29.167 13.096-29.167 29.225 0 14.583 10.675 26.687 24.617 28.875V43.633h-7.408v-8.458h7.408v-6.446c0-7.32 4.346-11.346 11.025-11.346 3.18 0 6.504.555 6.504.555v7.204h-3.675c-3.617 0-4.754 2.245-4.754 4.55v5.483h8.108l-1.312 8.458H39.55V64.05a29.166 29.166 0 0024.617-28.875C64.167 19.045 51.042 5.95 35 5.95z"
-          />
-        </svg>
+        <!-- red social Github -->
+        <a href="https://github.com/Tomytool?tab=repositories">
+          <svg
+            width="70"
+            height="60"
+            viewBox="0 0 228 186"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <path
+                d="M200.353 -0.183274C194.189 -0.2746 179.872 1.82125 155.967 17.8468C142.939 14.5853 129.076 12.9759 115.19 12.9759C99.9117 12.9759 84.4718 14.9192 70.073 18.8756C35.7525 -4.57659 20.6037 0.22946 20.6037 0.22946C10.714 25.0015 16.8254 43.342 18.6829 47.897C7.05901 60.4628 -0.0371094 76.5088 -0.0371094 96.175C-0.0371094 111.022 1.64992 124.338 5.77159 135.914C6.00018 136.808 5.92609 136.609 6.31122 137.373C7.21926 139.77 8.22888 142.096 9.36366 144.342C9.7525 145.151 10.1064 145.749 10.1064 145.749C21.6928 167.382 44.5334 181.357 85.1722 185.744L146.636 185.814C189.976 181.509 210.772 167.493 220.356 145.714L220.965 144.296C221.873 142.096 222.664 139.807 224.83 132.101C226.995 124.396 227.963 111.051 227.963 96.169C227.963 74.8246 219.96 57.7457 206.963 44.7523C209.234 37.409 212.268 21.1009 203.934 0.223508C203.934 0.223508 202.765 -0.147562 200.353 -0.18346L200.353 -0.183274ZM151.916 78.1447C161.924 78.1229 170.496 79.844 176.933 86.6075V86.6133C184.986 95.0839 189.699 105.311 189.699 116.332C189.699 167.79 156.658 169.19 115.904 169.19C75.1431 169.19 42.1092 162.059 42.1092 116.332C42.1092 105.384 46.7532 95.218 54.7072 86.7818C67.9753 72.722 90.4283 80.1672 115.904 80.1672C128.981 80.1652 141.263 78.1677 151.917 78.1445L151.916 78.1447ZM76.0034 93.2977C67.5235 93.2977 60.6489 104.782 60.6489 118.954C60.6489 133.128 67.5231 144.616 76.0034 144.616C84.4833 144.616 91.3579 133.128 91.3579 118.954C91.3579 104.784 84.4837 93.308 76.0034 93.2977ZM158.386 93.2977C149.907 93.2977 143.032 104.782 143.032 118.954C143.032 133.128 149.906 144.616 158.386 144.616C166.866 144.616 173.741 133.128 173.741 118.954C173.741 104.784 166.867 93.308 158.386 93.2977Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="228" height="186" fill="white" />
+              </clipPath>
+            </defs></svg
+        ></a>
+
         <!-- red social de instagram -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="70"
-          height="70"
-          fill="none"
-          viewBox="0 0 70 70"
-        >
-          <path
-            fill="white"
-            d="M22.75 5.833h24.5c9.333 0 16.917 7.584 16.917 16.917v24.5A16.917 16.917 0 0147.25 64.167h-24.5c-9.333 0-16.917-7.584-16.917-16.917v-24.5A16.916 16.916 0 0122.75 5.833zm-.583 5.834a10.5 10.5 0 00-10.5 10.5v25.666c0 5.805 4.696 10.5 10.5 10.5h25.666a10.5 10.5 0 0010.5-10.5V22.167c0-5.805-4.695-10.5-10.5-10.5H22.167zm28.146 4.375a3.646 3.646 0 110 7.292 3.646 3.646 0 010-7.292zM35 20.417a14.584 14.584 0 110 29.167 14.584 14.584 0 010-29.167zm0 5.833a8.75 8.75 0 100 17.5 8.75 8.75 0 000-17.5z"
-          />
-        </svg>
+        <a href="https://www.instagram.com/tomytool/"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="70"
+            height="70"
+            fill="none"
+            viewBox="0 0 70 70"
+          >
+            <path
+              fill="white"
+              d="M22.75 5.833h24.5c9.333 0 16.917 7.584 16.917 16.917v24.5A16.917 16.917 0 0147.25 64.167h-24.5c-9.333 0-16.917-7.584-16.917-16.917v-24.5A16.916 16.916 0 0122.75 5.833zm-.583 5.834a10.5 10.5 0 00-10.5 10.5v25.666c0 5.805 4.696 10.5 10.5 10.5h25.666a10.5 10.5 0 0010.5-10.5V22.167c0-5.805-4.695-10.5-10.5-10.5H22.167zm28.146 4.375a3.646 3.646 0 110 7.292 3.646 3.646 0 010-7.292zM35 20.417a14.584 14.584 0 110 29.167 14.584 14.584 0 010-29.167zm0 5.833a8.75 8.75 0 100 17.5 8.75 8.75 0 000-17.5z"
+            /></svg
+        ></a>
+
         <!-- red social Twitter -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="70"
-          height="70"
-          fill="none"
-          viewBox="0 0 70 70"
-        >
-          <path
-            fill="white"
-            d="M65.508 17.5a24.99 24.99 0 01-7.175 2.012 12.538 12.538 0 005.484-6.941c-2.421 1.458-5.105 2.479-7.934 3.062-2.304-2.508-5.541-3.966-9.216-3.966-6.855 0-12.455 5.6-12.455 12.512 0 .992.117 1.954.321 2.859C24.15 26.512 14.904 21.525 8.75 13.97a12.379 12.379 0 00-1.692 6.27c0 4.346 2.188 8.197 5.571 10.384-2.07 0-3.996-.583-5.687-1.458v.087c0 6.067 4.316 11.142 10.033 12.28a12.308 12.308 0 01-5.63.203 12.483 12.483 0 0011.667 8.692 24.853 24.853 0 01-15.545 5.367c-.992 0-1.984-.059-2.975-.175a35.421 35.421 0 0019.191 5.629c22.984 0 35.613-19.075 35.613-35.612 0-.555 0-1.08-.03-1.634 2.45-1.75 4.55-3.966 6.242-6.504z"
-          />
-        </svg>
+        <a href="https://twitter.com/tomytool"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="70"
+            height="70"
+            fill="none"
+            viewBox="0 0 70 70"
+          >
+            <path
+              fill="white"
+              d="M65.508 17.5a24.99 24.99 0 01-7.175 2.012 12.538 12.538 0 005.484-6.941c-2.421 1.458-5.105 2.479-7.934 3.062-2.304-2.508-5.541-3.966-9.216-3.966-6.855 0-12.455 5.6-12.455 12.512 0 .992.117 1.954.321 2.859C24.15 26.512 14.904 21.525 8.75 13.97a12.379 12.379 0 00-1.692 6.27c0 4.346 2.188 8.197 5.571 10.384-2.07 0-3.996-.583-5.687-1.458v.087c0 6.067 4.316 11.142 10.033 12.28a12.308 12.308 0 01-5.63.203 12.483 12.483 0 0011.667 8.692 24.853 24.853 0 01-15.545 5.367c-.992 0-1.984-.059-2.975-.175a35.421 35.421 0 0019.191 5.629c22.984 0 35.613-19.075 35.613-35.612 0-.555 0-1.08-.03-1.634 2.45-1.75 4.55-3.966 6.242-6.504z"
+            /></svg
+        ></a>
       </div>
     </foorter>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>

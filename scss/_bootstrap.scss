@@ -32,6 +32,7 @@
       align-items: center;
       a {
         @include botones;
+        margin-top: 20px;
       }
     }
   }

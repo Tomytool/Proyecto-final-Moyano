@@ -177,6 +177,7 @@
       @include texto_alineado;
       a {
         @include botones;
+        margin-top: 20px;
       }
     }
   }
